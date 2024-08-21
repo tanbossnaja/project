@@ -191,8 +191,8 @@ function App2() {
             Hi Thu.<br/>
             We'd like to order tomorrow as below;<br/>
             <br/>
-            <ul>
-                {orders.map((orders, index) => <li onClick key={index} > - {orders} </li>)}
+            <ul >
+                {orders.map((orders, index) => <li  > {orders} </li>)}
             </ul>
             <br/>
             Best regard,<br/>
