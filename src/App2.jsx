@@ -7,23 +7,23 @@ import viteLogo from '/vite.svg'
 function App2() {
 
     const [orders, setorder] = useState([]);
-    const [Chicken_breast_sliced, setChicken_breast_sliced] = useState(0);
-    const [Beef_sliced, setBeef_sliced] = useState(0);
-    const [Soft_shell_crab, setSoft_shell_crab] = useState(0);
-    const [Chicken_tenderloin, setChicken_tenderloin] = useState(0);
-    const [Pork_mince, setPork_mince] = useState(0);
-    const [wings, setwings] = useState(0);
-    const [Cooked_Prawns, setCookedPrawns] = useState(0);
-    const [Raw_Prawns, setRawPrawns] = useState(0);
-    const [squid, setsquid] = useState(0);
-    const [Basa, setBasa] = useState(0);
-    const [Pork_Neck, setPorkNeck] = useState(0);
-    const [Pork_Tenderloin, setPorkTenderloin] = useState(0);
-    const [Pork_Belly, setPorkBelly] = useState(0);
-    const [Pork_Belly_Boneless, setPorkBellyBoneless] = useState(0);
-    const [Maryland, setMaryland] = useState(0);
-    const [Diced, setDiced] = useState(0);
-    const [Barramundi, setBarramundi] = useState(0);
+    const [Chicken_breast_sliced, setChicken_breast_sliced] = useState();
+    const [Beef_sliced, setBeef_sliced] = useState();
+    const [Soft_shell_crab, setSoft_shell_crab] = useState();
+    const [Chicken_tenderloin, setChicken_tenderloin] = useState();
+    const [Pork_mince, setPork_mince] = useState();
+    const [wings, setwings] = useState();
+    const [Cooked_Prawns, setCookedPrawns] = useState();
+    const [Raw_Prawns, setRawPrawns] = useState();
+    const [squid, setsquid] = useState();
+    const [Basa, setBasa] = useState();
+    const [Pork_Neck, setPorkNeck] = useState();
+    const [Pork_Tenderloin, setPorkTenderloin] = useState();
+    const [Pork_Belly, setPorkBelly] = useState();
+    const [Pork_Belly_Boneless, setPorkBellyBoneless] = useState();
+    const [Maryland, setMaryland] = useState();
+    const [Diced, setDiced] = useState();
+    const [Barramundi, setBarramundi] = useState();
 
     function handleChickenChange(event) {
         setChicken_breast_sliced(event.target.value);
@@ -186,14 +186,17 @@ function App2() {
 
             <button onClick={handleClick}> order </button>
             <button onClick={handleClearClick}> clear </button>
-
-            <p>Hi Thu.</p>
-            <p>We'd like to order tomorrow as below;</p>
+            <br/>
+            <br/>
+            Hi Thu.<br/>
+            We'd like to order tomorrow as below;<br/>
+            <br/>
             <ul>
                 {orders.map((orders, index) => <li onClick key={index} > - {orders} </li>)}
             </ul>
-            <p>Best regard,</p>
-            <p>Malee Made in Thailand.</p>
+            <br/>
+            Best regard,<br/>
+            Malee Made in Thailand.
         </div>
 
         
