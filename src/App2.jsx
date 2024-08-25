@@ -196,7 +196,8 @@ function App2() {
             </ul>
             <br/>
             Best regard,<br/>
-            Malee Made in Thailand.
+            Malee Made in Thailand.<br/>
+            <br/>
         </div>
 
         
