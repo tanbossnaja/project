@@ -26,6 +26,7 @@ function App2() {
     const [Maryland, setMaryland] = useState();
     const [Diced, setDiced] = useState();
     const [Barramundi, setBarramundi] = useState();
+    const [Pineapple, setPineapple] = useState();
 
     function handleChickenChange(event) {
         setChicken_breast_sliced(event.target.value);
@@ -77,6 +78,9 @@ function App2() {
     }
     function handlBarramundiChange(event) {
         setBarramundi(event.target.value)
+    }
+    function handlePineappleChange(event) {
+        setPineapple(event.target.value);
     }
 
 
@@ -134,6 +138,9 @@ function App2() {
             if (Barramundi > 0) {
                 setorder(orders => [...orders, "Whole frozen Barramundi  " + document.getElementById("Barramundi").value + " Box."]);
             }
+            if (Pineapple > 0) {
+                setorder(orders => [...orders, "Squid - Pineapple Cut IQF Pieces  " + document.getElementById("Pineapple").value + " Bag."]);
+            }
 
         }
         
@@ -185,6 +192,8 @@ function App2() {
             <p> Diced Beef(4cm)   <input type="number" id="Diced" value={Diced} onChange={handlDicedChange} ></input>  Kg</p>
 
             <p> Whole frozen Barramundi   <input type="number" id="Barramundi" value={Barramundi} onChange={handlBarramundiChange} ></input>  Box</p>
+
+            <p> Squid - Pineapple Cut IQF Pieces   <input type="number" id="Pineapple" value={Pineapple} onChange={handlePineappleChange} ></input>  Bag</p>
 
             <button onClick={handleClick}> order </button>
             <button onClick={handleClearClick}> clear </button>
