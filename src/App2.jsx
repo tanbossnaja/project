@@ -193,7 +193,7 @@ function App2() {
 
             <p> Whole frozen Barramundi   <input type="number" id="Barramundi" value={Barramundi} onChange={handlBarramundiChange} ></input>  Box</p>
 
-            <p> Squid - Pineapple Cut IQF Pieces   <input type="number" id="Pineapple" value={Pineapple} onChange={handlePineappleChange} ></input>  Bag</p>
+            <p> Squid - Pineapple Cut IQF Pieces    <input type="number" id="Pineapple" value={Pineapple} onChange={handlePineappleChange} ></input>  Bag</p>
 
             <button onClick={handleClick}> order </button>
             <button onClick={handleClearClick}> clear </button>
